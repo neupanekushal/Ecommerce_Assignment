@@ -1,0 +1,143 @@
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+body {
+  font: 1.5rem Helvetica;
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100%;
+}
+.header {
+  display: flex;
+  grid-area: header;
+  background-color: red;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.brand a {
+  color: white;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.brand {
+  color: white;
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.header-links a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.header-links a:hover {
+  color: green;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.products li {
+  list-style: none;
+  padding: 0;
+  flex: 0 1 35rem;
+  margin: 1rem;
+  height: 50rem;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.product-image {
+  max-width: 35rem;
+  max-height: 35rem;
+  object-fit: contain;
+}
+
+.productname a {
+  text-decoration: none;
+  color: blue;
+}
+
+.productname a:hover {
+  background-color: aquamarine;
+  border: 1px solid azure;
+  border-radius: 5px;
+  padding: 10px;
+  color: red;
+}
+
+.product-brand {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.product-rating {
+  margin-bottom: 1.5rem;
+}
+
+.brand button {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 5rem;
+}
+
+.sidebar {
+  position: fixed;
+  width: 30rem;
+  background: white;
+  height: 100%;
+}
+
+.close-button {
+  position: absolute;
+  right: 0.5rem;
+  top: 1.5rem;
+  padding: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: 2rem;
+  cursor: pointer;
+  border: o.1rem solid black;
+  border-radius: 50%;
+}
+
+.side {
+  padding: 20px 0px;
+  border-bottom: 1px solid whitesmoke;
+}
+
+ul {
+  list-style: none;
+}
+
+.side {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+}
